@@ -5,7 +5,11 @@
 
 using namespace std;
 
-int fx=2450,fy=1250,sx=50,sy=50,w=10,c;
+DWORD fx=GetSystemMetrics(SM_CXSCREEN);
+DWORD fy=GetSystemMetrics(SM_CYSCREEN);
+int sx=50,sy=50,w=10,c;
+int mx=(fx-100)/w;
+int my=(fy-150)/w;
 
 main(){
 	initwindow(fx+100,fy+100);
